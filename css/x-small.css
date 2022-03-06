@@ -1,0 +1,69 @@
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    background-color: #272822;
+    color: #f8f8f2;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+.container {
+    padding: 0 1em;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.view-btn {
+    display: inline-block;
+    cursor: pointer;
+}
+
+.view-btn.active,.view-btn:hover {
+    background-color: #66D9EF;
+}
+
+#view-controls {
+    display: flex;
+    gap: 1em;
+    margin-bottom: 1em;
+}
+
+#view-controls input[type=text] {
+    flex-grow: 1;
+    background-color: #f8f8f2;
+    border: none;
+    border-radius: 5px;
+}
+
+.card {
+    cursor: pointer;
+}
+
+#game-list.card-view .card {
+    display: inline-block;
+    background-color: #f8f8f2;
+    border-radius: 5px;
+    padding: 1em;
+}
+
+#game-list.card-view {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1em;
+    justify-items: center;
+}
+
+#game-list.list-view img, #game-list.card-view h3 {
+    display: none;
+}
+
+#game-list.list-view h3, #game-list.card-view img {
+    display: block;
+}
+
+#game-list.list-view .card {
+    border-top: solid 1px black;
+    border-bottom: solid 1px black;
+}
