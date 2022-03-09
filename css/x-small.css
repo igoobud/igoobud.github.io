@@ -7,6 +7,12 @@ body {
     font-family:Arial, Helvetica, sans-serif;
 }
 
+.home-link,.home-link:visited,.home-link:hover,.home-link:active {
+    text-decoration: none;
+    color: inherit;
+    cursor:pointer;
+}
+
 .container {
     padding: 0 1em;
 }
